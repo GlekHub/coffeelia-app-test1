@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#d3b8ae"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".QtyFragment">
+
+    <EditText
+        android:id="@+id/et_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:text="@string/add" />
+</LinearLayout>

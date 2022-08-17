@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1887f"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    tools:context=".RegAct">
+
+    <TextView
+        android:id="@+id/reg_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingVertical="10dp"
+        android:text="@string/num_code"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reg_mobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_login_number"
+        android:ems="10"
+        android:hint="@string/num"
+        android:inputType="phone"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reg_number"
+        app:layout_constraintTop_toTopOf="@+id/reg_number"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_reg_name"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/reg_mobile" />
+
+    <EditText
+        android:id="@+id/reg_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_reg_address"
+        android:ems="10"
+        android:hint="@string/mail"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/reg_name" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_login_password"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/reg_address" />
+
+    <EditText
+        android:id="@+id/reg_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_login_password"
+        android:ems="10"
+        android:hint="@string/confirm"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/reg_password" />
+
+    <Button
+        android:id="@+id/reg_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/reg"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/reg_confirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

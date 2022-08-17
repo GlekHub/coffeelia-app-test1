@@ -1,0 +1,11 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="#725b53"
+    android:padding="15dp"
+    android:text="@string/tView"
+    android:textAlignment="center"
+    android:textColor="#c7c7c7"
+    android:textSize="24sp" />
